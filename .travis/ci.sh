@@ -10,5 +10,8 @@ trusted-public-keys = gravity.cs.illinois.edu-1:yymmNS/WMf0iTj2NnD0nrVV8cBOXM9iv
 sandbox = true
 EOF
 
+# Install updated Nix with memory usage improvements not in official release yet
+nix-env -i /nix/store/4k1h1klvk58mhm6l905hxx9mf85xxmhb-nix-2.0pre6107_3fbaa230
+
 # Build (uses ./default.nix)
 nix-build
